@@ -10,6 +10,10 @@ body {
   color: #FEF2BF;
 }
 
+span {
+  color: green;
+}
+
 .container {
   display: block;
   width:75%;

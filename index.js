@@ -6,7 +6,7 @@ let level = 0;
 let started = false; //allows game to start when key is pressed
 
 //starts game when any key is pressed
-$(document).keypress(function(){
+$("h1").click(function(){
 	if (!started) {
 
 	nextSequence();
@@ -113,7 +113,7 @@ let endGame = () => {
 
 	//resets level to 0, changes text to game over
 	level = 0;
-	$("h1").text("GAME OVER, PRESS ANY KEY TO RESTART");
+	$("h1").html("GAME OVER, <span>CLICK ME</span> TO RESTART");
 
 	//animates background with red flash
 	$("body").addClass("game-over");
