@@ -5,6 +5,9 @@ let buttonColours = ["red", "green", "blue", "yellow"];
 let level = 0;
 let started = false; //allows game to start when key is pressed
 
+const AudioContext = window.AudioContext || window.webkitAudioContext;
+const audioCtx = new AudioContext();
+
 //starts game when any key is pressed
 $("h1").click(function(){
 	if (!started) {
